@@ -1,4 +1,4 @@
-#if mobileC
+#if mobile || html5
 package mobile;
 
 import flixel.FlxG;

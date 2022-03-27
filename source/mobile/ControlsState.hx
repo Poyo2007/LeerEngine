@@ -1,4 +1,4 @@
-#if mobileC
+#if mobileC || html5
 package mobile;
 
 import flixel.ui.FlxButton;

@@ -228,7 +228,7 @@ class PlayState extends MusicBeatState
 	private var replayAna:Analysis = new Analysis(); // replay analysis
 
 	public static var highestCombo:Int = 0;
-	#if mobileC
+	#if mobileC || html5
 	var mcontrols:Mobilecontrols; 
 	#end
 
@@ -1088,7 +1088,7 @@ class PlayState extends MusicBeatState
 		if (loadRep)
 			replayTxt.cameras = [camHUD];
 
-		#if mobileC
+		#if mobileC || html5
 			mcontrols = new Mobilecontrols();
 			switch (mcontrols.mode)
 			{
@@ -2798,7 +2798,9 @@ class PlayState extends MusicBeatState
 
 					FlxG.sound.music.stop();
 					vocals.stop();
+					#if mobileC || html5
 					remove(mcontrols);
+					#end
 					if (FlxG.save.data.scoreScreen)
 						openSubState(new ResultsScreen());
 					else
@@ -2873,7 +2875,9 @@ class PlayState extends MusicBeatState
 				FlxG.sound.music.stop();
 				vocals.stop();
 
+        #if mobileC || html5
 				remove(mcontrols);
+				#end
 				if (FlxG.save.data.scoreScreen)
 					openSubState(new ResultsScreen());
 				else
