@@ -43,6 +43,7 @@ jobs:
           haxelib install flixel-addons
           haxelib install tjson
           haxelib install hxjsonast
+          haxelib install newgrounds
           haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
@@ -59,7 +60,7 @@ jobs:
           name: linuxBuild
           path: 'export/release/linux/bin' 
   buildWindows:
-    runs-on: windows-latest
+    runs-on: windows-2022
     
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -83,6 +84,7 @@ jobs:
           haxelib install flixel-addons
           haxelib install tjson
           haxelib install hxjsonast
+          haxelib install newgrounds
           haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit
           haxelib install hscript 
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
@@ -124,6 +126,7 @@ jobs:
           haxelib install flixel-addons
           haxelib install tjson
           haxelib install hxjsonast
+          haxelib install newgrounds
           haxelib git linc_luajit https://github.com/AndreiRudenko/linc_luajit
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
