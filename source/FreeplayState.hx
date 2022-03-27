@@ -148,7 +148,7 @@ class FreeplayState extends MusicBeatState
 			trace(md);
 		 */
 
-		#if mobileC
+		#if (mobileC || html5)
 		addVirtualPad(FULL, A_B);
 		#end
 

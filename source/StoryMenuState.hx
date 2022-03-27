@@ -200,7 +200,7 @@ class StoryMenuState extends MusicBeatState
 
 		trace("Line 165");
 
-		#if mobileC
+		#if (mobileC || html5)
 		addVirtualPad(FULL, A_B);
 		#end
 
